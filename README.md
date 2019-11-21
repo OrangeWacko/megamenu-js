@@ -1,7 +1,9 @@
-# megamenu-js
-Last responsive megamenu you'll ever need + BS4
+# megamenu-js-bs4
+Last responsive megamenu you'll ever need + Bootstrap4
 
-![Image of the Megamenu-JS](https://github.com/OrangeWacko/megamenu-js/megamenujs.jpg)
+Updated: November 21, 2019 
+
+![Image of the Megamenu-JS](https://github.com/OrangeWacko/megamenu-js/blob/master/megamenujs.jpg)
 
 ## huge thanks to Michele Maietta (https://github.com/doppiam) for all contribution in this project.
 
@@ -25,8 +27,8 @@ Last responsive megamenu you'll ever need + BS4
 ## Demos
 Download and open index.html **or:**
 #### Live Demo
-Live demo is avaliable on codepen
-[megamenu.js demo](http://codepen.io/riogrande/pen/MKXweV)
+Live demo on Codepen:
+[megamenu.js demo](https://codepen.io/orange_wacko/pen/wvvZaBK)
 
 
 
