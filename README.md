@@ -3,7 +3,7 @@ Last responsive megamenu you'll ever need + Bootstrap4
 
 Updated: November 21, 2019 
 
-![Image of the Megamenu-JS](https://github.com/OrangeWacko/megamenu-js/blob/master/megamenujs.jpg)
+![Image of the Megamenu-JS](https://github.com/OrangeWacko/megamenu-js/blob/master/mega-menu-js.jpg)
 
 ## huge thanks to Michele Maietta (https://github.com/doppiam) for all contribution in this project.
 
