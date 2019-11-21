@@ -1,10 +1,13 @@
 # megamenu-js
-Last responsive megamenu you'll ever need
+Last responsive megamenu you'll ever need + BS4
+
+![Image of the Megamenu-JS](https://github.com/OrangeWacko/megamenu-js/megamenujs.jpg)
 
 ## huge thanks to Michele Maietta (https://github.com/doppiam) for all contribution in this project.
 
 
 ## Features
+- Bootstrap4 support
 - Cross-browser compatibility
 - No classes! (for dropdowns or lists)
 - Smart - knows when to show megamenu, and when to show a normal dropdown
@@ -26,15 +29,15 @@ Live demo is avaliable on codepen
 [megamenu.js demo](http://codepen.io/riogrande/pen/MKXweV)
 
 
-## To do
-- rewrite plugin in vanilla JS
-- make CSS only animation version, for no < IE11 support
 
+## Installation
+1) This version uses Bootstrap4 CSS for the Demo index.html, so include the stylesheet from CDN: 
+```
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+```
+1.1) Copy CSS from **style.css** or **style.less**
 
-## Instalation
-1) Copy CSS from **style.css** or **style.less**
-
-1.1) megamenu.js uses [ionicons](http://ionicons.com/), so include their script or edit CSS for your icon-font, svg, img or what ever
+1.2) megamenu.js uses [ionicons](http://ionicons.com/), so include their script or edit CSS for your icon-font, svg, img or what ever
 
 2) Include jquery just before closing body tag `</body>`
 ```
@@ -52,9 +55,11 @@ Live demo is avaliable on codepen
 <div class="menu-container">
         <div class="menu">
                 <ul>
-                  <li></li>
-                  <li></li>
-                  <!-- What ever, basic html menu(lists)! Dont worry megamenu.js will know -->
+                  <li><a>Link</a></li>
+                  <li>
+                    <a>Mega Link</a>
+                    <div class="mega-menu"><!-- Whatever, basic html menu(lists)! Dont worry megamenu.js will know --></div>
+                  </li>
                 </ul>
         </div>
     </div>
@@ -62,7 +67,8 @@ Live demo is avaliable on codepen
 
 
 ## Usage and jquery explanation
-megamenu.js is 100% class-less. That means that none CSS classes are used for displaying dropdowns. Its made with HTML
+This version uses Bootstrap4 to build HTML content inside the Mega-menu HTML containers. 
+Its made with HTML
 schematic logic in mind. Because of that **does not require custom walkers with wordpress**.
 When jquery triggers for mobile menu, its appending HTML for mobilemenu so there is no need for checkboxes or anything else.
 The menu is 100% autonomous, and smart.

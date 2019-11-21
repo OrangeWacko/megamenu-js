@@ -3,11 +3,11 @@ $(document).ready(function () {
 
     "use strict";
 
-    $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+    $('.menu > ul > li:has( > .mega-menu), .menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
     //Checks if li has sub (ul) and adds class for toggle icon - just an UI
 
 
-    $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+    $('.menu > ul > li > .mega-menu:not(:has(ul)), .menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
     //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
 
     $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">Navigation</a>");
@@ -20,11 +20,13 @@ $(document).ready(function () {
     $(".menu > ul > li").hover(
         function (e) {
             if ($(window).width() > 943) {
+                $(this).children(".mega-menu").fadeIn(150);
                 $(this).children("ul").fadeIn(150);
                 e.preventDefault();
             }
         }, function (e) {
             if ($(window).width() > 943) {
+                $(this).children(".mega-menu").fadeOut(150);
                 $(this).children("ul").fadeOut(150);
                 e.preventDefault();
             }
