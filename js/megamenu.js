@@ -45,12 +45,27 @@ $(document).ready(function () {
         //no more overlapping menus
         //hides other children menus when a list item with children menus is clicked
         var thisMenu = $(this).children("ul");
-        var prevState = thisMenu.css('display');
-        $(".menu > ul > li > ul").fadeOut();
-        if ($(window).width() < 943) {
-            if(prevState !== 'block')
-                thisMenu.fadeIn(150);
+        var thisMegaMenu = $(this).children(".mega-menu");
+        
+        if(thisMenu) {
+            var prevState = thisMenu.css('display');
+            thisMenu.fadeOut();
+            if ($(window).width() < 943) {
+                if(prevState !== 'block')
+                    thisMenu.fadeIn(150);
+            }
         }
+
+        if (thisMegaMenu) {
+            var prevState = thisMegaMenu.css('display');
+            thisMegaMenu.fadeOut();
+            if ($(window).width() < 943) {
+                if(prevState !== 'block')
+                    thisMegaMenu.fadeIn(150);
+            }
+        }
+        
+        
     });
     //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
 

@@ -11,6 +11,8 @@
 Body - not related to megamenu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@import 'ionicons.min.css';
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -119,9 +121,9 @@ Screen style's
     margin: 0;
 }
 
-.menu > ul > li a {
+.menu > ul > li > ul > li a {
     text-decoration: none;
-    padding: 0.7em 3em;
+    padding: 0.7em 0;
     display: block;
 }
 
@@ -268,10 +270,10 @@ Mobile style's
         width: 100%;
         display: block;
     }
-    .menu > ul > li > .mega-menu {
+    .menu > ul > li > .mega-menu, .menu > ul > li > ul {
         position: relative;
     }
-    .menu > ul > li > .mega-menu.normal-sub {
+    .menu > ul > li > .mega-menu.normal-sub, .menu > ul > li > ul {
         width: 100%;
     }
     .menu > ul > li > .mega-menu li {
