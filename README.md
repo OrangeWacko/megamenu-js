@@ -39,7 +39,10 @@ Live demo on Codepen:
 ```
 1.1) Copy CSS from **style.css** or **style.less**
 
-1.2) megamenu.js uses [ionicons](http://ionicons.com/), so include their script or edit CSS for your icon-font, svg, img or what ever
+1.2) megamenu.js uses [ionicons](http://ionicons.com/) for icons, so include stylesheet in your project: 
+```
+<link rel="stylesheet" href="css/ionicons.min.css">
+```
 
 2) Include jquery just before closing body tag `</body>`
 ```
